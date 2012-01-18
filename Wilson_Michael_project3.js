@@ -46,6 +46,19 @@ for (var suitcaseNumber = 0; suitcaseNumber < suitcaseNames.length; suitcaseName
 	packOneSuitcase();
 	}
 
+var letsLeave = "We are ready to set out on our trip";
+
+console.log(letsLeave);
+
+var heros = ["friends are well",
+	"family is happy",
+	"2 days to travel to seattle"
+];
+
+for (var i=0; i < 3; i++) {
+	console.log(heros[i]);
+	}
+
 //first days trip
 var hours = 7
 while (hours > 0) {
