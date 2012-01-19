@@ -24,4 +24,6 @@ var json = {
 	}
 }
 
-json.Friends
+for (var key in json.Friends) {
+	json.Friends[key]
+};
