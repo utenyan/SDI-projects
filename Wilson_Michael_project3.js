@@ -68,7 +68,9 @@ var Daughter = {
 for (var key2 in Daughter) {
 	console.log("Daughter - " + key2 + ": " + Daughter[key2]);
 };
-	
+
+
+
 var suitcaseNames = [ "Moms", "Dads", "Daughters" ],
 	minutesToPack = [ 25, 15, 45 ];
 var packOneSuitcase = function() {
