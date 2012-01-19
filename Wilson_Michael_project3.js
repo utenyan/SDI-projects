@@ -96,6 +96,26 @@ var heros = ["friends are well",
 	"2 days to travel to seattle"
 ];
 
+var superPowers = function (ability) {
+	var powerRange = []
+	var strengthOfPowers = function (number) {
+		powerRange.push(number);
+	};
+	return {
+		"ability": ability,
+		"strength of powers": powerRange,
+		"person with powers": "",
+		"powerRange": strengthOfPowers
+	};
+};
+
+var exrayVision = superPowers("ExrayVision");
+var levitation = superPowers("Levitation");
+//camillion means blend into any environmental background seamlessly
+var camillion = superPowers("Camillion");
+
+console.log(exrayVision);
+
 for (var i=0; i < 3; i++) {
 	console.log(heros[i]);
 }
