@@ -7,19 +7,19 @@ var json = {
 	"Friends": {
 		"friend1": {
 			"Name": "Lea",
-			"ID": "Mom"
+			"Status": "Mom"
 		},
 		"friend2": {
 			"Name": "James",
-			"ID": "Dad"
+			"Status": "Dad"
 		},
 		"friend3": {
 			"Name": "Josh",
-			"ID": "Son"
+			"Status": "Son"
 		},
 		"friend4": {
 			"Name": "Trev",
-			"ID": "oldestSon"
+			"Status": "oldestSon"
 		}
 	}
 }
