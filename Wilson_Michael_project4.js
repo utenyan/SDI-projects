@@ -52,4 +52,12 @@ var smallParty = function (partyGoers) {
         return orderedParty;
 };
 
-//
+//find the smallest value in an array
+var smallNumber = function (threshold, myNumbers) {
+        for (var i = 0; i < myNumbers.length; i++) {
+            if (myNumbers[i] > threshold) {
+                return myNumbers[i];
+                break;
+            }
+        }
+};
