@@ -51,3 +51,5 @@ var smallParty = function (partyGoers) {
         var orderedParty = (partyGoers.sort(sortParty));
         return orderedParty;
 };
+
+//
