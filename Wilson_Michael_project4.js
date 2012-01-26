@@ -36,3 +36,9 @@ var isURL = function (myURL) {
             return urlBad;
         }
 };
+
+//format a number to use specific decimal places
+var cartTotal = function (cost) {
+        var yourTotal = cost.toFixed(3);
+        return yourTotal;
+};
