@@ -42,3 +42,12 @@ var cartTotal = function (cost) {
         var yourTotal = cost.toFixed(3);
         return yourTotal;
 };
+
+//Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects
+var smallParty = function (partyGoers) {
+        function sortParty(a, b) {
+            return a.place - b.place;
+        }
+        var orderedParty = (partyGoers.sort(sortParty));
+        return orderedParty;
+};
