@@ -12,3 +12,16 @@ var phoneNumber = function (myNumber) {
             return numberBad;
         }
 };
+
+//does string follow an email format
+var checkEmail = function (addy) {
+        var newAddy = addy.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/);
+        if (newAddy) {
+            good = addy + "This is a valid email address.";
+            return good;
+        } else {
+            invalid = addy + "This is an invalid email address, please use this format abc123@youremail.com.";
+            return invalid;
+        }
+};
+
