@@ -14,14 +14,25 @@ var phoneNumber = function (myNumber) {
 };
 
 //does string follow an email format
-var checkEmail = function (addy) {
-        var newAddy = addy.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/);
-        if (newAddy) {
-            good = addy + "This is a valid email address.";
+var checkEmail = function (address) {
+        var newAddress = address.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/);
+        if (newAddress) {
+            good = address + "This is a valid email address.";
             return good;
         } else {
-            invalid = addy + "This is an invalid email address, please use this format abc123@youremail.com.";
+            invalid = address + "This is an invalid email address, please use this format abc123@youremail.com.";
             return invalid;
         }
 };
 
+//does string follow url format
+var isURL = function (myURL) {
+        var urlCheck = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+        if (myURL.match(urlCheck)) {
+            urlGood = "This url " + myURL + ", is a valid address you may continue.";
+            return urlGood;
+        } else {
+            urlBad = "Your url " + myURL + ", does not follow the proper format. Please use this format http://www.mywebsite.com.";
+            return urlBad;
+        }
+};
